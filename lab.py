@@ -775,6 +775,7 @@ def largest3(xs):
     if not xs:
         return result
     if len(xs) <= 3:
+        xs.sort()
         return xs
     for i in range(3):
         biggest = largest(xs)
